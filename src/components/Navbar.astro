@@ -1,45 +1,60 @@
-<header class="fixed top-0 left-0 w-full z-50 bg-slate-950/80 backdrop-blur border-b border-slate-800">
+---
+const base = import.meta.env.BASE_URL;
+---
 
-    <nav class="max-w-6xl mx-auto flex items-center justify-between px-8 py-5">
+<header class="fixed top-0 left-0 w-full z-50 backdrop-blur-md bg-slate-950/70 border-b border-slate-800">
 
-        <h1 class="text-2xl font-bold text-white">
+  <nav class="max-w-7xl mx-auto flex justify-between items-center px-8 py-5">
 
-            <span class="text-emerald-400">&lt;</span>
+    <!-- Logo -->
 
-            Nir Eshet
+    <a
+      href={base}
+      class="text-2xl font-black tracking-widest text-white">
 
-            <span class="text-emerald-400">/&gt;</span>
+      <span class="text-emerald-400">NIR</span>.
 
-        </h1>
+    </a>
 
-        <div class="flex gap-8 text-slate-300">
+    <!-- Navigation -->
 
-            <a href="#about" class="hover:text-emerald-400 transition">
+    <div class="flex items-center gap-8 text-slate-300 font-medium">
 
-                About
+      <a
+        href="#about"
+        class="hover:text-emerald-400 transition">
+        About
+      </a>
 
-            </a>
+      <a
+        href="#skills"
+        class="hover:text-emerald-400 transition">
+        Skills
+      </a>
 
-            <a href="#skills" class="hover:text-emerald-400 transition">
+      <a
+        href="#projects"
+        class="hover:text-emerald-400 transition">
+        Projects
+      </a>
 
-                Skills
+      <a
+        href="#contact"
+        class="hover:text-emerald-400 transition">
+        Contact
+      </a>
 
-            </a>
+      <a
+        href={`${base}resume.pdf`}
+        target="_blank"
+        class="bg-emerald-500 hover:bg-emerald-400 text-slate-950 font-semibold px-5 py-2 rounded-lg transition">
 
-            <a href="#projects" class="hover:text-emerald-400 transition">
+        Resume
 
-                Projects
+      </a>
 
-            </a>
+    </div>
 
-            <a href="#contact" class="hover:text-emerald-400 transition">
-
-                Contact
-
-            </a>
-
-        </div>
-
-    </nav>
+  </nav>
 
 </header>
